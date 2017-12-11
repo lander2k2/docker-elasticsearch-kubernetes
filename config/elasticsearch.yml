@@ -8,7 +8,9 @@ node:
   ingest: ${NODE_INGEST}
   max_local_storage_nodes: ${MAX_LOCAL_STORAGE_NODES}
 
-network.host: ${NETWORK_HOST}
+network:
+  host: ${NETWORK_HOST}
+  publish_host: ${NODE_NAME}
 
 path:
   data: /data/data
